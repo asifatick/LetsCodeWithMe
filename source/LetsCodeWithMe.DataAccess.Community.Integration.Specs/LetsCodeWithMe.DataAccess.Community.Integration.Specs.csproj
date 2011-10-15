@@ -50,9 +50,9 @@
       <Project>{88E43659-4241-4D81-9755-048FEC3DA95B}</Project>
       <Name>LetsCodeWithMe.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LetsCodeWIthMe.DataAccess.Community\LetsCodeWIthMe.DataAccess.Community.csproj">
+    <ProjectReference Include="..\LetsCodeWIthMe.DataAccess.Community\LetsCodeWithMe.DataAccess.Community.csproj">
       <Project>{BC44EAF1-6E32-4C9C-A126-35213F13D468}</Project>
-      <Name>LetsCodeWIthMe.DataAccess.Community</Name>
+      <Name>LetsCodeWithMe.DataAccess.Community</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

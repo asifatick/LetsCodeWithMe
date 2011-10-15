@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedFiles", "SharedFiles"
 		..\readme.txt = ..\readme.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsCodeWIthMe.DataAccess.Community", "LetsCodeWIthMe.DataAccess.Community\LetsCodeWIthMe.DataAccess.Community.csproj", "{BC44EAF1-6E32-4C9C-A126-35213F13D468}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsCodeWithMe.DataAccess.Community", "LetsCodeWIthMe.DataAccess.Community\LetsCodeWithMe.DataAccess.Community.csproj", "{BC44EAF1-6E32-4C9C-A126-35213F13D468}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsCodeWithMe.DataAccess.Community.Integration.Specs", "LetsCodeWithMe.DataAccess.Community.Integration.Specs\LetsCodeWithMe.DataAccess.Community.Integration.Specs.csproj", "{8C35533A-D116-4166-A7BB-8889C4710FC9}"
 EndProject
