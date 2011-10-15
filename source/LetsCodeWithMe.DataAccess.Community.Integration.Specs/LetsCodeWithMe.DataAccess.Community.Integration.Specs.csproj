@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{88E43659-4241-4D81-9755-048FEC3DA95B}</ProjectGuid>
+    <ProjectGuid>{8C35533A-D116-4166-A7BB-8889C4710FC9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LetsCodeWithMe.Core</RootNamespace>
-    <AssemblyName>LetsCodeWithMe.Core</AssemblyName>
+    <RootNamespace>LetsCodeWithMe.DataAccess.Community.Integration.Specs</RootNamespace>
+    <AssemblyName>LetsCodeWithMe.DataAccess.Community.Integration.Specs</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -21,8 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,26 +29,34 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.2.0.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\IBlogRepository.cs" />
-    <Compile Include="DataAccess\IPostRepository.cs" />
-    <Compile Include="DomainObjects\Blog.cs" />
-    <Compile Include="DomainObjects\Category.cs" />
-    <Compile Include="DomainObjects\Page.cs" />
-    <Compile Include="DomainObjects\Post.cs" />
-    <Compile Include="DomainObjects\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DomainObjects\ClassDiagram.cd" />
+    <ProjectReference Include="..\LetsCodeWithMe.Core\LetsCodeWithMe.Core.csproj">
+      <Project>{88E43659-4241-4D81-9755-048FEC3DA95B}</Project>
+      <Name>LetsCodeWithMe.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LetsCodeWIthMe.DataAccess.Community\LetsCodeWIthMe.DataAccess.Community.csproj">
+      <Project>{BC44EAF1-6E32-4C9C-A126-35213F13D468}</Project>
+      <Name>LetsCodeWIthMe.DataAccess.Community</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

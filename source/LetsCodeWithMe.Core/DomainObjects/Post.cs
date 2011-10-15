@@ -50,13 +50,13 @@ namespace LetsCodeWithMe.DomainObjects
             set { allowComments = value; }
         }
 
+        public virtual string Body { get; set; }
+
         public virtual ICollection<Tag> Tags
         {
             [DebuggerStepThrough]
             get { return tags ?? (tags = new List<Tag>()); }
         }
-
-        public virtual string Body { get; set; }
 
         public virtual Blog Blog { get; set; }
     }
